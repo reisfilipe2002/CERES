@@ -1,0 +1,25 @@
+.carousel-img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.carousel-caption h5{
+  color: #ffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.btn-carousel{
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+  &:hover{
+    background-color: #889da0;
+    color: #000;
+    transition: ease-in-out 0.8s;
+  }
+}

@@ -1,2 +1,80 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-main">
+  <%= image_tag "logo-4.png", alt: "Movie Matcher Logo", class: "navbar-logo"%>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#section1">Soluções</a>
+      <a class="nav-item nav-link" href="#section2">Sobre</a>
+      <a class="nav-item nav-link" href="#section3">Fale conosco</a>
+    </div>
+  </div>
+</nav>
+<div class="banner" style="background-image: url(<%=asset_path('banner-img.jpg')%>); opacity: 0.7;">
+  <div class="container">
+    <h1>CERES <strong> cultivando o futuro da agricultura com tecnologia. </strong></h1>
+    <p>A nossa missão é impulsionar a adoção de tecnologia no campo para revolucionar a agricultura, tornando-a mais eficiente</p>
+  </div>
+</div>
+<div class="mt-5" style="padding: 160px; background-image: url(<%=asset_path('fundo.jpg')%>); background-position: center -8%;
+background-repeat: no-repeat;">
+  <h3 class= "text-center"><strong>Ousadia, inovação e cooperação são os pilares que sustentam a nossa trajetória.</strong></h3>
+  <p class= "text-center">Na CERES, não apenas semeamos inovação, mas cultivamos conexões, criando um ecossistema onde produtores,</p>
+  <p class= "text-center">caminhoneiros e empresas agrícolas podem prosperar juntos.</p>
+</div>
+<div class="carousel mt-2" id="section1">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-img">
+            <img class="d-block w-100 h-80" src="<%=asset_path('carousel1.jpg')%>" alt="First slide">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Conectamos motoristas de caminhão a produtores e empresas para facilitar o transporte de produtos do campo para a cidade ou portos</h5>
+            <button class="btn-carousel">Conheça o CERES Connect</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-img">
+            <img class="d-block w-100" src="<%=asset_path('carousel2.jpg')%>" alt="Second slide">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Encontre os produtos de que precisa e junte-se a outros produtores para fazer compras coletivas, reduzindo assim os custos</h5>
+            <button class="btn-carousel">Conheça o Mercado CERES</button>
+          </div>
+        </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <h3 class="text-right mt-2 pr-4"><strong>Nossas soluções</strong></h3>
+
+<div class="info" id="section2">
+  <h3 class="text-center my-5">QUEM SOMOS</h3>
+  <p>A CERES é uma Agrotech inovadora que busca revolucionar o setor agrícola no Brasil. Nascida da visão de um desenvolvedor de software e um agricultor, a CERES é uma empresa jovem e ousada que tem como objetivo trazer soluções tecnológicas inovadoras para o campo. Nossa história começou há seis meses, quando decidimos unir tecnologia e agricultura para criar soluções que facilitam a vida dos produtores rurais.
+
+Nossas principais soluções incluem um e-commerce de insumos agrícolas, onde produtores de todos os tamanhos podem encontrar os produtos de que precisam e se juntar a outros para fazer compras coletivas, reduzindo assim os custos. Além disso, oferecemos um serviço de entrega estilo "Uber", conectando motoristas de caminhão a produtores e empresas para facilitar o transporte de produtos do campo para a cidade ou portos.</p>
+  <h3 class="text-center my-5">NOSSA MISSÃO</h3>
+  <p>A missão da CERES é modernizar o campo, trazendo abordagens tecnológicas inovadoras que podem transformar a produção agrícola no Brasil. Acreditamos na criatividade, inovação, tecnologia e ajuda mútua como nossos valores fundamentais.
+
+Estamos comprometidos em ajudar todos os produtores, desde os pequenos aos grandes, oferecendo soluções que facilitam suas vidas e tornam suas operações mais eficientes. Além disso, estamos comprometidos com a sustentabilidade e a responsabilidade social, buscando sempre maneiras de fazer negócios que sejam benéficas para nossos clientes e para o meio ambiente.</p>
+</div>
+
+<div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2023 CERES site. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
